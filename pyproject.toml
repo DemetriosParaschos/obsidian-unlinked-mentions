@@ -1,0 +1,17 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "obsidian-unlinked-mentions"
+version = "0.1.0"
+description = "A script to find unlinked mentions in Obsidian vaults."
+authors = [
+    { name="Demetrios Paraschos", email="Demetrios.Paraschos@vub.be" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "pyyaml",
+    "tqdm"
+]
