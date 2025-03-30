@@ -1,7 +1,7 @@
 # README.md
 # Obsidian Unlinked Mentions Report
 
-This Python package scans your Obsidian vault for unlinked mentions of note titles and aliases. It produces a contextual report that helps improve internal linking in your notes.
+This Python package scans your [Obsidian](https://github.com/obsidianmd) vault for unlinked mentions of note titles and aliases. It generates a contextual report to help you improve internal linking across your notes.
 
 ---
 
@@ -10,6 +10,14 @@ This Python package scans your Obsidian vault for unlinked mentions of note titl
 - Cleans notes from LaTeX, code, links, and optionally callouts
 - Detects multiple context-rich unlinked mentions
 - Generates a `.md` report with suggested links and context
+
+---
+
+## 🧰 Requirements
+
+- Python 3.8+
+- Obsidian vault (any structure)
+- Unix/Linux/macOS or Windows
 
 ---
 
@@ -41,6 +49,8 @@ The vault path is read from an environment variable:
 ```bash
 export VAULT_PATH="/path/to/your/obsidian/vault"
 ```
+
+You can add this to your terminal session before running the script, or place it in a startup script (like `.bashrc`, `.zshrc`, or a `.env` file).
 
 If this variable is not set, the script will stop and show you a helpful error message.
 
@@ -80,7 +90,7 @@ You will be prompted whether to exclude Obsidian callout blocks. After scanning,
 ---
 
 ## 📜 License
-MIT License. See the full text in the `LICENSE` file.
+MIT License. See the full text in the [`LICENSE`](https://github.com/DemetriosParaschos/obsidian-unlinked-mentions/blob/main/LICENSE) file.
 
 ---
 
