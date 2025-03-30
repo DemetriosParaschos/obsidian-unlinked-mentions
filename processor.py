@@ -2,9 +2,9 @@
 import os
 import re
 from tqdm import tqdm
-from utils import extract_aliases, clean_text, extract_all_contexts, prompt_exclude_callouts
+from .utils import extract_aliases, clean_text, extract_all_contexts, prompt_exclude_callouts
 import yaml
-from config import VAULT_PATH, EXTENSION, OUTPUT_FILENAME
+from .config import VAULT_PATH, EXTENSION, OUTPUT_FILENAME
 
 def run_analysis():
     exclude_callouts = prompt_exclude_callouts()
